@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+
+    "name": "WVC",
+    "description": "webm vol controller",
+    "version": "1.0",
+
+    "permissions": [
+      "storage"
+    ],
+
+    "icons": {
+		"16": "/images/icons/Spider-16.png",
+		"48": "/images/icons/Spider-48.png",
+		"128": "/images/icons/Spider-128.png"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["https://2ch.hk/*.mp4", "https://2ch.hk/*.webm"],
+        "js": ["js/main_action.js"]
+      }
+    ],
+
+    "browser_action": {
+        "default_title": "Change your webm volume",
+        "default_icon": "/images/icons/Spider-48.png",
+        "default_popup": "popup.html"
+    }
+
+}
