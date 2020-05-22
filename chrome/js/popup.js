@@ -8,6 +8,9 @@ function setValue(){
 function getValue(){
 	chrome.storage.local.get(["myRangeVal"], function(result){
 		//alert('Value currently is ' + result.myRangeVal);
+		if(result.myRangeVal == 20){
+			x.value = 20;
+		}
 		x.value = result.myRangeVal;
 		document.getElementById("demo").innerHTML = x.value + "%";
 	});
