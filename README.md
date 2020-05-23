@@ -4,4 +4,4 @@
 - **popup_version** (a lot of slylish customised stuff in popup menu) *works on Chrome and Opera*
 - **silent_version** (works in silent mode, no menus, jast saving your webm volume) *works on every browser*
 
-To install the extension **GOOGLE**  or try this (RU) https://habr.com/ru/post/226063/
+To install the extension **GOOGLE**  or try this (RU) https://comhub.ru/kak-ustanovit-storonnee-rasshirenie-v-google-chrome/
