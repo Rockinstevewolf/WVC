@@ -20,7 +20,7 @@ if(localStorage.getItem("wvcRangeVal") == undefined || localStorage.getItem("wvc
 
 vid.volume = localStorage.getItem("wvcRangeVal");
 
-if(vid.volume > 0.6){
+if(vid.volume > 0.8){
 	alert('Careful, the volume is ' + vid.volume*100);
 }
 
