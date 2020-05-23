@@ -1,5 +1,11 @@
 var vid = document.querySelector("body > video");
 
+function setValue(){
+	chrome.storage.local.set({"wvcRangeVal": vid.volume*100}, function(){
+		//alert('Value is set to ' + x.value);
+	});
+}
+
 chrome.storage.local.get(["wvcRangeVal", "wvcFlag"], function(result){
 	if(result.wvcRangeVal == undefined){
 		chrome.storage.local.set({"wvcRangeVal": 20}, function(){
@@ -19,3 +25,5 @@ chrome.storage.local.get(["wvcRangeVal", "wvcFlag"], function(result){
 });
 
 
+
+vid.addEventListener('volumechange', setValue);
